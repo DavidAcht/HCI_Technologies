@@ -9,9 +9,6 @@ function spin(){
 	myOtherBox.object3D.rotation.x -= rotationSpeed;
 	myOtherBox.object3D.rotation.y -= rotationSpeed;
 	myOtherBox.object3D.rotation.z -= rotationSpeed;
-	myOtherBox.object3D.scale.x -= rotationSpeed;
-	myOtherBox.object3D.scale.y -= rotationSpeed;
-	myOtherBox.object3D.scale.z -= rotationSpeed;
 	console.log(x);
 	rotationSpeed += 0.5;
 }
