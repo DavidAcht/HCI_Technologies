@@ -7,8 +7,14 @@ function spin(){
 	myOtherBox.object3D.rotation.y += rotationSpeed;
 	myOtherBox.object3D.rotation.z += rotationSpeed/2;
 	//console.log(myOtherBox.object3D.rotation);
-	var newH = document.createElement('H1').innerHTML = "Let's spin!";
-	document.body.appendChild(newH);
+	function createH1Element(text) {
+    var h = document.createElement("H1");
+    var t = document.createTextNode(text); 
+    h.appendChild(t); 
+    document.body.appendChild(h);
+	} 
+ 
+	createH1Element("Let's spin!");
 }
 setInterval(spin, 50);
 
