@@ -7,18 +7,20 @@ function spin(){
 	myOtherBox.object3D.rotation.y += rotationSpeed;
 	myOtherBox.object3D.rotation.z += rotationSpeed/2;
 	//console.log(myOtherBox.object3D.rotation);
-	document.getElementById("letsSpin").style.display = "block";
+	
 }
 setInterval(spin, 50);
 
 
 myOtherBox.addEventListener('mouseenter', function(){
 	rotationSpeed = 0.01;
+	document.getElementById("letsSpin").style.display = "block";
 	console.log('entered');
 });
 
 myOtherBox.addEventListener('mouseleave', function(){
 	rotationSpeed = 0.001;
+	document.getElementById("letsSpin").style.display = "none";
 	console.log('left');
 });
 
